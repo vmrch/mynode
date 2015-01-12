@@ -1,0 +1,54 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+    <style type="text/css">
+        .mydiv{
+            height:100PX;
+            width:300px;
+            border:1px solid red;
+        }
+         .ContentDiv{
+            height:100PX;
+            width:300px;
+            border:1px solid red;
+        }
+          .titleDiv{
+            height:25PX;
+            width:300px;
+            border:1px solid red;
+            cursor:pointer;
+        }
+    </style>
+</head>
+<body>
+    <button id="btnSlideUp">Slide Up</button>
+    <button id="btnSlideDown">Slide Down</button>
+    <div id="resultDiv" class="mydiv"> aWESOME DSCNSDLCNEWL CNDSCDJJCKDS
+    CDNSKCKLCNDLSCLKDS</div>
+
+    <br /><br />
+    <div id="titleDiv" class="titleDiv"> awesome</div>
+    <div id="resultDiv" class="ContentDiv">
+        aWESOME DSCNSDLCNEWL CNDSCDJJCKDS
+        CDNSKCKLCNDLSCLKDS
+    </div>
+    
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#btnSlideUp").click(function () {
+                $("#resultDiv").slideUp(5000);
+            });
+            $("#btnSlideDown").click(function () {
+                $("#resultDiv").slideDown(6000);
+            });
+            $("#titleDiv").click(function () {
+                $(".ContentDiv").slideToggle(4000);
+            });
+        });
+    </script>
+</body>
+</html>

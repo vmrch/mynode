@@ -1,0 +1,32 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <button id="btnDemo">demo</button><br /><br />
+    <button id="btnAddEvent">AddEvent</button>
+    <button id="btnRemoveEvent">RemoveEvent</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+           
+            $("#btnAddEvent").click(function () {
+                
+                //$("#btnDemo").bind("click", ClickEvent);
+                $("#btnDemo").one("click", ClickEvent);
+            });
+            $("#btnRemoveEvent").click(function () {
+                $("#btnDemo").unbind("click", ClickEvent);
+            });
+        });
+
+        function ClickEvent() {
+            alert('btn is clicked');
+        }
+    </script>
+
+</body>
+</html>

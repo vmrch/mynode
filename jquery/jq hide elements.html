@@ -1,0 +1,36 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+
+</head>
+<body>
+    <div id="resultDiv">
+        this is awesome njknvfjnvkjdh jcdl 
+    </div>
+    <br />
+    <button type="button" id="btnHideDive">Hide DIV</button>
+    <button type="button" id="btnShowDive">Show DIV</button>
+    <button type="button" id="btnToggleDive">Toggle DIV</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            
+            $("#btnHideDive").click(function () {
+                $("#resultDiv").fadeOut("1000");
+               // $("#resultDiv").hide("1000");
+            });
+            $("#btnShowDive").click(function () {
+                $("#resultDiv").fadeIn("1000");
+               // $("#resultDiv").show("2000");
+            });
+            $("#btnToggleDive").click(function () {
+
+                $("#resultDiv").toggle("3000");
+            });
+        });
+    </script>
+</body>
+</html>

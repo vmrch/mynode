@@ -1,0 +1,29 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <input type="checkbox" /><label>Red</label>
+    <input type="checkbox" /><label>Green</label>
+    <input type="checkbox" /><label>Pink</label>
+    <input type="checkbox" /><label>Blue</label>
+    <input type="date" />
+
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("input:checkbox").click(function () {
+            if ($("input:checked").length > 3) {
+                alert("You have selected more than 3 boxes");
+                $(this).click();
+            }
+          });
+        });
+        
+    </script>
+</body>
+</html>

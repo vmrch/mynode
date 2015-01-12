@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <input type="checkbox"onclick="Validate(this)" /><label>Red</label>
+    <input type="checkbox" onclick="Validate(this)" /><label>Green</label>
+    <input type="checkbox" onclick="Validate(this)" /><label>Pink</label>
+    <input type="checkbox" onclick="Validate(this)" /><label>Blue</label>
+    <input type="date" />
+   
+
+    <script type="text/javascript">
+        function Validate(ref) {
+           if( $("input:checked").length > 3)
+            {
+                alert("You have selected more than 3 boxes");
+                $(ref).click();
+            }
+        }
+    </script>
+</body>
+</html>

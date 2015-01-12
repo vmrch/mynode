@@ -1,0 +1,23 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <div>
+        <h1>Ven</h1>
+    </div>
+    <script type="text/javascript">
+        var c = jQuery.noConflict();
+        c(document).ready(function () {
+            alert('doc is ready');
+            alert(c("*").html());
+
+        });
+    </script>
+
+</body>
+</html>

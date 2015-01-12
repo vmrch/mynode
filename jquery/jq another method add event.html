@@ -1,0 +1,39 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <input type="text" />
+    <input type="text" />
+    <input type="text"id="txtDemo" />
+    <input type="text" id="txtDemotemp" />
+    <input type="text" />
+
+
+    <div id="resultDiv">
+
+    </div>
+    <button id="btnGetCheckbox">Get Checkbox</button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#txtDemo").focus();
+            $("#txtDemotemp").focus(function(){
+                alert('nice');
+            });
+           $("#btnGetCheckbox").click(function () {
+                // for one box to add
+                $("#resultDiv").html('<input type="checkbox" id= "chkDemo" /><span>Click Me</span>');
+//for multiple to add
+               $("#resultDiv").append('<input type="checkbox" id= "chkDemo" /><span>Click Me</span>');
+
+
+           });
+         });
+        </script>
+
+</body>
+</html>

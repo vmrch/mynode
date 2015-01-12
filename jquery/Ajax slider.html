@@ -1,0 +1,33 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <!--script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jQuery.min.js"--><!--/script-->
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <div id="mandiv1">
+
+    </div>
+    <p id="p1">slideupand down</p>
+    <button id="button">
+        clcik me
+    </button>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert('kljf');
+            $("#button").click(function () {
+                $("#mandiv1").html(' <button id="chk">click 2</button>');
+
+                $("#chk").click(function () {
+                    $("#p1").css("color", "red")
+                    .slideUp(2000)
+                    .slideDown(3000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

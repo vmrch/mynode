@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+</head>
+<body>
+    <button type="button" onclick="foo(); foo1(); ">Click me</button>
+    <button onclick="CreateButton()">Create Button</button>
+    <script type="text/javascript">
+        var count = 0;
+        function foo() {
+            if (count % 2 == 0) {
+                alert('foo1');
+            }
+            
+        }
+        function foo1() {
+            if (count % 2 != 0) {
+                alert('tet');
+            } count++;
+        }
+       
+    </script>
+</body>
+</html>

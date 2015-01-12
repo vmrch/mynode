@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript" src="jquery-2.1.3.min.js"></script>
+</head>
+<body>
+    <div id="demoDiv">
+        <div>
+            <span> demospan</span>
+        </div>
+        <div> div child2</div>
+    </div>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            alert('ret');
+            $("#demoDiv").children().each(function () {
+                alert($(this).html());
+            });
+        });
+    </script>
+</body>
+</html>
