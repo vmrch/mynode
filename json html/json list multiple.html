@@ -1,0 +1,27 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script type="text/javascript">
+        var obj1 = { user: "John", age: 22, country: "usa" };
+        var obj2 = { user: "Nik", age: 24, country: "uk" };
+        var obj3 = { user: "Jaden", age: 29, country: "ussr" };
+        var obj4 = { u1: obj1, u2: obj2, u3: obj3 };
+        document.write(obj1.user + " is " + obj3.age + " yrs old lives in " + obj2.country);
+        obj2.country = "Italy";
+        document.write("<hr />");
+        document.write(obj1.user + " is " + obj3.age + " yrs old lives in " + obj2.country);
+        document.write("<hr />");
+        document.write(obj4.u3.country);
+        document.write("<hr />");
+        document.write(obj4.u3.country+" is far  from where "+obj4.u2.user+" lives and he is"+obj1.age+"yrs old");
+        document.write("<hr />");
+        document.write(obj4 ["u2"]["country"]);
+    </script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,27 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" >
+<head>
+<script type= "text/javascript">
+function ajax_get_json(){
+	var hr = new XMLHttpRequest();
+	hr.open("GET", "mylist.json",true);
+	hr.setRequestHeader("Content-type","application/json",true);
+	hr.onreadystatechange = function(){
+		if(hr.readyState ==4 && hr.status == 200) {
+			var data = JSON.parse(hr.responseText);
+			var results = document.getElementById("results");
+			results.innerHTML = data.u2.user +" is "+ data.u2.age+" and lives in"+data.u2.country;
+		}
+	}
+	hr.send(null);
+	results.innerHTML = "requesting...";
+}
+	
+</script>
+</head>
+<body>
+	<div id ="results"> awesome</div>
+	<script type ="text/javascript">ajax_get_json();</script>
+</body>
+</html>
