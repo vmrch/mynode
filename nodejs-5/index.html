@@ -1,0 +1,22 @@
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-2.1.0.min.js"></script>
+ <script>
+  var counter = 0;
+  var poll =function() {
+  	$.getJSON('/poll/'+counter, function(response) {
+      counter = response.count;
+      var elem = $('#output');
+        elem.text(elem.text()+response.append);
+        poll();
+  	});
+  }
+  poll();
+  </script>
+  </head>
+  <body>
+  whatsup 
+  <textarea id ="output" style="width:50%; height:50%; bakground-color:red;">
+  </textarea>
+  </body>
+  </html>

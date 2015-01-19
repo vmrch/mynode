@@ -1,0 +1,14 @@
+{
+  "name": "with-grunt",
+  "version": "1.0.0",
+  "description": "a workflow with grunt",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "ven",
+  "license": "ISC",
+  "dependencies": {
+    "grunt": "^0.4.5"
+  }
+}
